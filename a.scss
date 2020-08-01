@@ -1,0 +1,28 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+}
+
+div {
+     font-size: 18px;
+     p {
+         color: blue;
+     }
+     ul {
+         color: green;
+     }
+ }
+ %message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.last {
+      @extend %message;
+      background-color: green;
+  }
